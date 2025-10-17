@@ -5,11 +5,11 @@ import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { HiMiniMagnifyingGlassPlus } from "react-icons/hi2";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
-import PaginationComponent from "@/app/components/PaginationComponent";
 import UpdateCategoryButton from "@/app/(marketing)/components/UpdateCategory";
 import categoriesData from "@/app/data/categories.json";
 import { HiMinus } from "react-icons/hi";
 import Deletecategory from "@/app/(marketing)/components/deletecategory";
+import PaginationComponent from "../Paginationcomponent";
 
 export default function Tablecategories({
   currentProducts = [],

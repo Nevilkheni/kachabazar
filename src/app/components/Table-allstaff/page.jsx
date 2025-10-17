@@ -8,7 +8,6 @@ import {
   HiOutlineMagnifyingGlass,
 } from "react-icons/hi2";
 import PaginationComponent from "@/app/components/PaginationComponent";
-import UpdateCategoryButton from "@/app/(marketing)/components/UpdateCategory";
 import allstaffData from "@/app/data/allstaff.json";
 import Deletecategory from "@/app/(marketing)/components/deletecategory";
 import UpdatestaffButton from "@/app/(marketing)/components/updatestaff";

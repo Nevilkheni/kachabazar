@@ -4,10 +4,10 @@ import { Switch } from "@headlessui/react";
 import { FiEdit } from "react-icons/fi";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import PaginationComponent from "@/app/components/PaginationComponent";
 import attributesData from "@/app/data/attributes.json";
 import UpdateAttributeButton from "@/app/(marketing)/components/updateattribute ";
 import Delete from "@/app/(marketing)/components/delete";
+import PaginationComponent from "../Paginationcomponent";
 
 export default function Tableattributes({
   currentProducts = [],
