@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Custom Styles ---------- */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Default (Light) theme */
+:root {
+  --bg-color: #f8f7f4;
+  --text-color: #000;
+  --card-bg: #fff;
+  --border-color: #e5e7eb;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #fff;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+}
+
+/* ---------- Body Styles ---------- */
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+  scrollbar-width: none; 
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+body.no-scroll {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+body.no-scroll .drawer-content {
+  pointer-events: auto;
+}
+
+/* ---------- Position & Z-Index Utilities ---------- */
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-60 {
+  z-index: 60;
+}
+
+.z-70 {
+  z-index: 70;
+}
+
+.relative-z-0 {
+  position: relative;
+  z-index: 0;
+}
+
+/* ---------- Scrollbar Hide ---------- */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ---------- Smooth Transitions ---------- */
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

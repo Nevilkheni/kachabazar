@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Euro",
+    "symbol": "€",
+    "enabled": true
+  },
+  {
+    "id": 2,
+    "name": "Dollar",
+    "symbol": "$",
+    "enabled": true
+  },
+  {
+    "id": 3,
+    "name": "Pound",
+    "symbol": "£",
+    "enabled": true
+  }
+]

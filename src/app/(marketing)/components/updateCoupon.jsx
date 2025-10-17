@@ -1,0 +1,272 @@
+"use client";
+import { useState, useEffect } from "react";
+import { FiX, FiUploadCloud } from "react-icons/fi";
+
+export default function UpdateCouponButton({
+  open: externalOpen,
+  setOpen: externalSetOpen,
+  product,
+}) {
+  const [internalOpen, setInternalOpen] = useState(false);
+  const open = externalOpen !== undefined ? externalOpen : internalOpen;
+  const setOpen =
+    externalSetOpen !== undefined ? externalSetOpen : setInternalOpen;
+
+  const [hasVariants, setHasVariants] = useState(false);
+  const [selected, setSelected] = useState("en");
+  const [activeTab, setActiveTab] = useState("basic");
+    const [hasOptions, setHasOptions] = useState(false);
+
+
+  const languages = [
+    "ta",
+    "tr",
+    "hi",
+    "es",
+    "pt",
+    "fr",
+    "ja",
+    "zh",
+    "ar",
+    "en",
+    "bn",
+  ];
+
+  const [formData, setFormData] = useState({
+    name: "",
+    category: "",
+    price: "",
+    salePrice: "",
+    stock: "",
+  });
+
+  useEffect(() => {
+    if (open) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "";
+
+    if (product) {
+      setFormData({
+        name: product?.name || "",
+        category: product?.category || "",
+        price: product?.price || "",
+        salePrice: product?.salePrice || "",
+        stock: product?.stock || "",
+      });
+      setHasVariants(!!product?.hasVariants);
+    }
+  }, [open, product]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  return (
+    <>
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/30 z-[9998]"
+          onClick={() => setOpen(false)}
+        />
+      )}
+
+      <div
+        className={`fixed top-0 right-0 h-full w-full sm:w-[50%] bg-white shadow-lg z-[9999] transform transition-transform duration-300 flex flex-col ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className=" w-full bg-[#f9fafb] dark:bg-gray-800 px-6 py-6">
+          <div className="md:flex   justify-between mr-20">
+            <div>
+              <h2 className="text-xl ">Update Coupon</h2>
+              <p className="text-bleck text-sm">
+                Updated your coupon and necessary information from here
+              </p>
+            </div>
+            <div className="flex gap-10">
+              <div className="">
+                <select
+                  value={selected}
+                  onChange={(e) => setSelected(e.target.value)}
+                  className="border text-sm   border-green-500 rounded-md flex px-2 pr-8.5 md:pr-5 xl:pr-8 bg-gray-100 dark:bg-gray-700 h-8  focus:outline-none"
+                >
+                  {languages.map((lang) => (
+                    <option
+                      key={lang}
+                      value={lang}
+                      className="text-center my-auto"
+                    >
+                      {lang}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button
+            onClick={() => setOpen(false)}
+            className="p-3 fixed top-6 right-6 rounded-full cursor-pointer text-end   bg-white text-red-600  hover:bg-red-100 hover:text-black shadow-md  "
+          >
+            <FiX size={15} />
+          </button>
+        </div>
+
+        <div className="px-6 pb-10 overflow-y-auto h-[calc(100%-80px)] dark:bg-gray-700 ">
+          <div className=" sm:flex pt-8 pb-10 md:pb-8 ">
+            <label className="block pb-3 sm:pb-0 text-sm font-medium">
+              Coupon Banner Image
+            </label>
+            <div className="md:mb-2   w-full sm:w-[66%] ml-auto border-2 dark:border-gray-600 border-dashed border-gray-300 rounded-md flex flex-col items-center justify-center p-5 text-center cursor-pointer hover:border-teal-500 dark:hover:border-gray-600 transition">
+              <p className="px-2 pb-2  text-3xl text-green-600">
+                <FiUploadCloud />
+              </p>
+
+              <p className="text-sm ">Drag your images here</p>
+              <p className="text-gray-400 text-xs my-1 pb-3 md:pb-1  ">
+                (Only *.jpeg, *.webp and *.png images will be accepted)
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="sm:flex ">
+              <label className="block  text-sm  pb-3 sm:pb-0 ">
+                Campaign Name
+              </label>
+              <input
+                type="text"
+                className=" w-full sm:w-[66%] ml-auto border border-gray-200 dark:border-gray-500 dark:bg-gray-800  rounded-md px-3 py-[9px]  focus:outline-none  focus:ring-teal-500 text-sm"
+                placeholder="Summer"
+              />
+            </div>
+            <div className="sm:flex py-6">
+              <label className="block  text-sm  pb-3 sm:pb-0 ">
+                Campaign Code
+              </label>
+              <input
+                type="text"
+                className=" w-full sm:w-[66%] ml-auto border border-gray-200 dark:border-gray-500 dark:bg-gray-800 rounded-md px-3 py-[9px]  focus:outline-none  focus:ring-teal-500 text-sm"
+                placeholder="Summer 100%"
+              />
+            </div>
+
+            <div className="sm:flex ">
+              <label className="block text-sm pb-3 sm:pb-0">
+                Coupon Validity Time
+              </label>
+              <input
+                type="date"
+                className="w-full flex sm:w-[66%] ml-auto border border-gray-200 dark:border-gray-500 dark:bg-gray-800 rounded-md px-3 py-[9px] focus:outline-none focus:ring-teal-500 text-sm"
+              />
+            </div>
+            <div className="sm:flex justify-between pt-6 pb-3">
+              <label className="block  text-sm pb-3 sm:pb-0">
+                Discount Type
+              </label>
+              <div className="flex sm:ml-2 w-full sm:w-[66%]  md:justify-start ml-auto items-center">
+                <button
+                  onClick={() => setHasOptions(!hasOptions)}
+                  className={`relative flex items-center w-[125px] h-[33px] rounded-full transition-colors duration-300 ${
+                    hasOptions ? "bg-[#2f855a]" : "bg-red-600"
+                  }`}
+                >
+                  <span
+                    className={`absolute left-[1px] w-[31px] h-[31px] bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                      hasOptions ? "translate-x-[92px]" : "translate-x-0"
+                    }`}
+                  />
+                  <span className="mr-2 ml-auto">
+                    {hasOptions ? (
+                      <span className="text-white text-sm mr-8">
+                        Percentage
+                      </span>
+                    ) : (
+                      <span className=" text-white  mr-5.5 text-sm">
+                        Fixed{" "}
+                      </span>
+                    )}
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div className="sm:flex py-6">
+              <label className="block  text-sm pb-3 sm:pb-0">DISCOUNT </label>
+              <div className="flex items-center w-full sm:w-[66%] ml-auto border  border-gray-300 dark:border-gray-500 rounded-md overflow-hidden">
+                <span className="px-3 text-gray-500 bg-gray-50 border-r h-full items-center flex text-sm border-gray-300 dark:border-gray-500 dark:bg-gray-700">
+                  %
+                </span>
+                <input
+                  type="text"
+                  className="w-full px-3 py-2 text-sm focus:outline-none dark:border-gray-500 dark:bg-gray-800"
+                  placeholder="Fixed Amount"
+                />
+              </div>
+            </div>
+            <div className="sm:flex">
+              <label className="block  text-sm pb-3 sm:pb-0">
+                Minimum Amount
+              </label>
+              <div className="flex items-center w-full sm:w-[66%] ml-auto border border-gray-300 dark:border-gray-500 rounded-md overflow-hidden">
+                <span className="px-3 text-gray-500 bg-gray-50 border-r h-full items-center flex text-sm dark:border-gray-500 dark:bg-gray-700 border-gray-300">
+                  $
+                </span>
+                <input
+                  type="text"
+                  className="w-full px-3 py-2 text-sm focus:outline-none dark:border-gray-500 dark:bg-gray-800"
+                  placeholder="Minimum amount required"
+                />
+              </div>
+            </div>
+            <div className="sm:flex  pt-6 pb-10">
+              <label className="block  text-sm  pb-3 sm:pb-0 ">Published</label>
+              <div className="sm:flex  w-full sm:w-[66%] ml-auto  text-sm">
+                <button
+                  onClick={() => setHasVariants(!hasVariants)}
+                  className={`relative  flex items-center w-20 h-[30px] rounded-full transition-colors duration-300 ${
+                    hasVariants ? "bg-green-700" : "bg-red-500"
+                  }`}
+                >
+                  <span
+                    className={`absolute  left-0.5 w-7 h-7 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                      hasVariants ? "translate-x-12" : "translate-x-0"
+                    }`}
+                  />
+                  <span className="text-sm  mr-2 ml-auto">
+                    {hasVariants ? (
+                      <span className="text-white mr-8 ">Yes</span>
+                    ) : (
+                      <span className="text-white mr-2">No</span>
+                    )}
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer className=" flex sm:flex-row flex-col justify-center gap-3 sm:gap-4 lg:gap-6   px-4 py-3 sm:px-6 sm:py-4 lg:py-6 text-sm bg-[#f9fafb] dark:bg-gray-800">
+          <button
+            onClick={() => setOpen(false)}
+            className="cursor-pointer py-2.5 sm:py-[11px] max-w-[630px] border border-gray-200 w-full rounded-md hover:bg-white bg-gray-100 dark:bg-gray-700 dark:border-none dark:hover:bg-gray-800 dark:text-gray-300 dark:hover:text-white"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={() => {
+              console.log("Updated Product:", {
+                ...product,
+                ...formData,
+                hasVariants,
+              });
+              setOpen(false);
+            }}
+            className="cursor-pointer max-w-[630px]  py-2.5 sm:py-[11px] w-full bg-[#10b77f] text-white rounded-md hover:bg-teal-600 dark:text-black"
+          >
+            Update Coupon
+          </button>
+        </footer>
+      </div>
+    </>
+  );
+}

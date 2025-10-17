@@ -1,0 +1,47 @@
+[
+
+  {
+     "id": 2,
+    "campaignName": "August Gift Voucher",
+    "code": "AUGUST24",
+    "discount": "50%",
+    "published": true,
+    "startDate": "13 Oct, 2025",
+    "endDate": "2 Dec, 2025",
+    "status": "Active",
+    "image": "https://i.ibb.co/PDLPDHc/ins1.jpg"
+  },
+  {
+     "id": 3,
+    "campaignName": "Summer Gift Voucher",
+    "code": "SUMMER24",
+    "discount": "10%",
+    "published": true,
+    "startDate": "13 Oct, 2025",
+    "endDate": "20 Dec, 2024",
+    "status": "Expired",
+    "image": "https://i.ibb.co/4thS4Z1/ins2.jpg"
+  },
+  {
+     "id": 4,
+    "campaignName": "Winter Gift Voucher",
+    "code": "WINTER25",
+    "discount": "$100",
+    "published": true,
+    "startDate": "13 Oct, 2025",
+    "endDate": "1 Jun, 2025",
+    "status": "Expired",
+    "image": "https://i.ibb.co/wBBYm7j/ins4.jpg"
+  },
+  {
+      "id": 5,
+    "campaignName": "Summer Gift Voucher",
+    "code": "SUMMER26",
+    "discount": "10%",
+    "published": true,
+    "startDate": "13 Oct, 2025",
+    "endDate": "19 Oct, 2026",
+    "status": "Active",
+    "image": "https://i.ibb.co/23kQcB9/ins3.jpg"
+  }
+]

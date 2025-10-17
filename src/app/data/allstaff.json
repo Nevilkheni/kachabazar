@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "alamgirh389@gmail.com",
+    "email": "alamgirh389@gmail.com",
+    "contact": "0195793003",
+    "joiningDate": "15 Oct, 2025",
+    "role": "Super Admin",
+    "status": "Active",
+    "published": true,
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Satya",
+    "email": "staya@yopmail.com",
+    "contact": "5555555555",
+    "joiningDate": "15 Oct, 2025",
+    "role": "Driver",
+    "status": "Active",
+    "published": true,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "",
+    "email": "tushar073c@yopmail.com",
+    "contact": "",
+    "joiningDate": "15 Oct, 2025",
+    "role": "Super Admin",
+    "status": "Active",
+    "published": true,
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "",
+    "email": "tushar.webinfinitesolutions@gmail.com",
+    "contact": "",
+    "joiningDate": "15 Oct, 2025",
+    "role": "Admin",
+    "status": "Active",
+    "published": true,
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "",
+    "email": "driver@mailinator.com",
+    "contact": "+1 (673) 441-2728",
+    "joiningDate": "15 Oct, 2025",
+    "role": "Driver",
+    "status": "Active",
+    "published": true,
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "contact": "360-943-7332",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Super Admin",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/WpM5yZZ/9.png"
+  },
+  {
+    "id": 7,
+    "name": "Marion V. Parker",
+    "email": "marion@gmail.com",
+    "contact": "713-675-8813",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Admin",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/3zs3H7z/team-5.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Stacey J. Meikle",
+    "email": "stacey@gmail.com",
+    "contact": "616-738-0407",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Ceo",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/XjwBLcK/team-2.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Shawn E. Palmer",
+    "email": "shawn@gmail.com",
+    "contact": "949-202-2913",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Manager",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/GWVWYNn/team-7.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Corrie H. Cates",
+    "email": "corrie@gmail.com",
+    "contact": "914-623-6873",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Accountant",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/SNN7JCX/team-6.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Alice B. Porter",
+    "email": "alice@gmail.com",
+    "contact": "708-488-9728",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Cashier",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/m5B0hK4/team-8.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Dorothy R. Brown",
+    "email": "dorothy@gmail.com",
+    "contact": "708-628-3122",
+    "joiningDate": "13 Oct, 2025",
+    "role": "Security Guard",
+    "status": "Active",
+    "published": true,
+    "image": "https://i.ibb.co/d294W8Y/team-4.jpg"
+  }
+]

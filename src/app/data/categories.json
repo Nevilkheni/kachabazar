@@ -1,0 +1,96 @@
+[
+  {
+    "id": "0BD8",
+    "name": "Fruits & Vegetable",
+    "subNames": ["Baby Food", "Fresh Fruits", "Dry Fruits", "Fresh Vegetable"],
+    "description": "tushar test category page",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340704/category%20icon/cabbage_n59uv3.png",
+    "published": true
+  },
+  {
+    "id": "0BE8",
+    "name": "Fruits & Vegetable",
+    "subNames": ["Baby Food", "Fresh Fruits", "Dry Fruits", "Fresh Vegetable"],
+    "description": "Fruits & Vegetable",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340704/category%20icon/cabbage_n59uv3.png",
+    "published": true
+  },
+  {
+    "id": "0BC4",
+    "name": "Cooking Essentials",
+    "subNames": ["flour", "Oil"],
+    "description": "Cooking Essentials",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340704/category%20icon/frying-pan_vglm5c.png",
+    "published": true
+  },
+  {
+    "id": "0BA0",
+    "name": "Biscuits & Cakes",
+    "subNames": ["Biscuits", "Cakes"],
+    "description": "Biscuits & Cakes",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/cookie_1_ugipqa.png",
+    "published": true
+  },
+  {
+    "id": "0B49",
+    "name": "Household Tools",
+    "subNames": [
+      "Water Filter",
+      "Cleaning Tools",
+      "Pest Control",
+      "Air Freshener",
+      "Luandry",
+      "Cleaner"
+    ],
+    "description": "Household Tools",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340706/category%20icon/spray_pebsjt.png",
+    "published": true
+  },
+  {
+    "id": "0B0E",
+    "name": "Pet Care",
+    "subNames": ["Dog Care", "Cat Care"],
+    "description": "Pet Care",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340707/category%20icon/cat_tznwmq.png",
+    "published": true
+  },
+  {
+    "id": "0A8A",
+    "name": "Beauty & Healths",
+    "subNames": ["Women", "Man"],
+    "description": "Beauty & Healths",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340706/category%20icon/beauty_vfbmzc.png",
+    "published": true
+  },
+  {
+    "id": "0A6A",
+    "name": "Jam & Jelly",
+    "description": "Jam & Jelly",
+    "img": "https://i.postimg.cc/rmLvfsMC/strawberry-jam-1.png",
+    "published": true
+  },
+  {
+    "id": "0A29",
+    "name": "Milk & Dairy",
+    "subNames": ["Butter & Ghee", "Ice Cream", "Dairy"],
+    "description": "Milk & Dairy",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340706/category%20icon/milk_dcl0dr.png",
+    "published": true
+  },
+  {
+    "id": "09C1",
+    "name": "Drinks",
+    "subNames": ["Tea", "Water", "Juice", "Coffee", "Ener Drinks"],
+    "description": "Drinks",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/juice_p5gv5k.png",
+    "published": true
+  },
+  {
+    "id": "0945",
+    "name": "Breakfast",
+    "subNames": ["Bread", "Cerea"],
+    "description": "Breakfast",
+    "img": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/bagel_mt3fod.png",
+    "published": true
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "81B6",
+    "name": "Size",
+    "displayName": "Size",
+    "option": "radio",
+    "published": true
+  },
+  {
+    "id": "81B2",
+    "name": "Color",
+    "displayName": "Color",
+    "option": "dropdown",
+    "published": true
+  },
+  {
+    "id": "5050",
+    "name": "volume",
+    "displayName": "volume",
+    "option": "radio",
+    "published": true
+  }
+]
